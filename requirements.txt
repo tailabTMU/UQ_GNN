@@ -1,0 +1,25 @@
+pandas==1.2.4
+numpy==1.19.5
+matplotlib==3.4.2
+--extra-index-url https://download.pytorch.org/whl/cu116
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
+-f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+pyg_lib
+torch-scatter==2.1.0
+torch-sparse==0.6.16
+torch-cluster==1.6.0
+torch-spline-conv==1.2.1
+torch-geometric==2.2.0
+scikit-learn==1.2.2
+joblib==1.2.0
+tqdm==4.64.0
+xgboost==1.7.1
+openpyxl==3.0.10
+captum==0.6.0
+imbalanced-learn==0.10.1
+smartnoise-synth==0.3.7
+graphviz==0.17
+seaborn==0.11.1
+tabulate==0.9.0

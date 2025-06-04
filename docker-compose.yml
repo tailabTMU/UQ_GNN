@@ -1,0 +1,23 @@
+services:
+  torch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DIST_ID: ${LINUX_DIST}
+    image: uncertainty_self_distillation
+    volumes:
+      - .:/code
+    command:
+      [
+        "bash"
+      ]
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
